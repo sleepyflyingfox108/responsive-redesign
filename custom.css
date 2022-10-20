@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "Quattrocento";
+    src: url(fonts/Quattrocento/Quattrocento-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Quattrocento";
+    src: url(fonts/Quattrocento/Quattrocento-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Quattrocento Sans";
+    src: url(fonts/Quattrocento_Sans/QuattrocentoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Quattrocento Sans";
+    src: url(fonts/Quattrocento_Sans/QuattrocentoSans-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Alata";
+    src: url(fonts/Alata/Alata-Regular.ttf);
+}
+
+body {
+    font-family:'Quattrocento';
+}
+
+h1, h2 {
+    font-family: 'Alata';
+}
+
+h1 {
+    font-size: 325%;
+}
+
+.navbar {
+    font-family: 'Quattrocento Sans';
+    text-align: center;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+
+.dropdown-menu {
+    background-color: #E4E9FF;
+    --bs-dropdown-link-hover-bg: #ffffff;
+    /* --bs-dropdown-link-color: #E4E9FF; */
+    --bs-dropdown-border-color: #000C4A;
+}
+
+.navbar-dark {
+    --bs-navbar-color: #E4E9FF;
+}
+
+.bg-dark {
+    background-color: #000C4A !important;
+}
+
+#COVID-banner {
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Quattrocento Sans';
+    background-color: #FFD978;
+    margin: 1vh;
+}
+
+h1 {
+    text-align: center;
+    margin: 5vh;
+}
+
+#mission-statement {
+    text-align: center;
+    font-family: 'Quattrocento Sans';
+    background-color: #E4E9FF;
+    padding: 2vh 5vw 1vh;
+    margin: 3vw 15vw;
+    border-radius: 10px;
+}
+
+#info-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#info-images img {
+    width: 25%;
+    margin: 0vh 1vw;
+}
+
+
+#description {
+    margin: 3vw 15vw;
+}
+
+.carousel {
+    margin: 5vh 15vw;
+}
+
+#COVID-advisory {
+    border-radius: 10px;
+    text-align: center;
+    margin: 2vh 15vw;
+    padding: 2vh 2vw;
+    background-color: #FFF59B;
+}
+
+#COVID-advisory ol {
+    border-radius: 15px;
+    text-align: left;
+    background-color: #FFD978;
+    padding: 2vh 5vw;
+}
+
+footer {
+    background-color: #000C4A;
+    color: #FFFFFF;
+    font-family: 'Quattrocento Sans';
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+#footer-info  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+#hours h3 {
+    margin-bottom: 2vh;
+}
+
+.blank_row {
+    height: 1vh !important;
+    background-color: #000C4A;
+}
+
+.space {
+    background: none;
+    width: 1vw;
+  }
+
+td {
+    text-align: left;
+}
+
+#location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+}
+
+#location h3 {
+    margin-bottom: 2vh;
+}
+
+#location img {
+    display: block;
+    max-width: 55%;
+    object-fit: contain;
+}
+
+#location p {
+    margin-top: 2vh;
+}
+
+#links {
+    margin-left: 1vw;
+}
+
+#links img {
+    width: 50px;
+    margin: 5px;
+}
+
+#icons {
+    display: inline-block;
+}
+
+#links p {
+    float: right;
+    margin-top: 3vh;
+}
+
+img[src="assets/insurance.png"] {
+    height: 75px !important;
+    width: 270px !important;
+    float: right;
+}
+
+img[src="assets/credit-cards.png"] {
+    height: 60px !important;
+    width: 240px !important;
+    float: right;
+}
+
+#facebook:hover {
+    filter: saturate(200%);
+}
+
+#petly:hover {
+    filter: saturate(200%);
+}
+
+/* still larger than tablet */
+
+@media (max-width: 1000px) {
+    #hours {
+        width: 40%;
+    }
+
+    #location {
+        width: 30%;
+    }
+}
+
+/* right to tablet size */
+
+@media (max-width: 780px) {
+    #mission-statement {
+        margin: 3vh 2vw;
+    }
+
+    body {
+        font-size: small;
+    }
+
+    .col-md-4, .col-md-3 img {
+        min-height: 40vh;
+        max-width: 100vw;
+    }
+
+    #description {
+        margin: 3vh 2vw;
+    }
+
+    .carousel {
+        margin: 2vh 2vw;
+    }
+
+    #COVID-advisory {
+        margin: 2vw;
+        padding: 1vh 1vw;
+    }
+
+    #COVID-advisory ol {
+        padding: 3vh 7vw;
+    }
+
+    #location img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 742px) {
+    #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #links :nth-child(2) {order: 4;}
+    #links :nth-child(3) {order: 3;}
+}
+
+@media (max-width: 670px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #info-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info-images img {
+        width: 65%;
+    }
+
+    #house {
+        margin-bottom: 3vh !important;
+    }
+
+    #footer-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hours {
+        width: 90%;
+        margin-bottom: 3vh;
+    }
+
+    #location {
+        width: 90%;
+    }
+
+}
